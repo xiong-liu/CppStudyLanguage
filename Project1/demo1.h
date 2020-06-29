@@ -41,3 +41,12 @@ void test3() {
 		}
 	}
 }
+
+//匹配一个电话号码
+void test4(){
+	string fmt = "$2.$5.$7";
+	string phone = "(\\()?(\\d{3})(\\))?([-. ])?(\\d{3})([-. ]?)(\\d{4})";
+	regex r(phone);
+	string number = "(908) 555-1800";
+	cout << regex_replace(number, r, fmt) << endl;
+}
