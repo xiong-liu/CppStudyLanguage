@@ -1,6 +1,6 @@
 #include "demo1.h"
 
 int main() {
-  test2();
+  test3();
   return 0;
 }
